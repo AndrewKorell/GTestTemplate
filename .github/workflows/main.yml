@@ -26,7 +26,7 @@ jobs:
           CC_path: /usr/local/bin/gcc-10
           CXX_path: /usr/local/bin/g++-10
       - name: report current folder
-        uses: ./test
+        uses: ./
       - run: pwd
       - run: ls
       - name: configure test ubuntu
