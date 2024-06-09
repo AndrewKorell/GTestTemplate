@@ -1,2 +1,0 @@
-- name: Install gtest
-  uses: MarkusJx/googletest-installer@v1.1
