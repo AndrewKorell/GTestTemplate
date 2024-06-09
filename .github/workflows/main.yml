@@ -25,6 +25,7 @@ jobs:
         with: # Set CC_path and CXX_path to gcc-10 and g++-10
           CC_path: /usr/local/bin/gcc-10
           CXX_path: /usr/local/bin/g++-10
+      - run: cd test
       - run: mkdir build
       - run: cd build
       - run: pwd
