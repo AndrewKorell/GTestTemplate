@@ -1,2 +1,14 @@
-- name: Install gtest
-  uses: MarkusJx/googletest-installer@v1.1
+name: CI
+
+on:
+  push:
+    branches: [ sandbox ]
+    
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: MarkusJx/googletest-installer@v1.1
+    - name: Install gtest
+
