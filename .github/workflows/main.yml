@@ -45,9 +45,8 @@ jobs:
           CXX: /usr/local/bin/g++-10
       - name: build test not windows
         if: matrix.os != 'windows-latest'
-        
-        run: cmake --build ..
-        working-directory: test
+        run: cmake --build .
+        working-directory: test/build
       - name: configure windows
         run: cmake .. -B build
         if: matrix.os == 'windows-latest'
