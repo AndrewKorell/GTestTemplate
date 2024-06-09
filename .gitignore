@@ -44,3 +44,4 @@
 # Libraries
 /lib
 /Debug
+/test/build
