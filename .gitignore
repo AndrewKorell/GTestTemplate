@@ -27,12 +27,12 @@
 # Misc
 *.map
 *.m
-*.png
+#*.png
 
 # Eclipse CDT project files
-.cproject
-.project
-.settings/
+#.cproject
+#.project
+#.settings/
 
 # Vagrant directory
 .vagrant/
@@ -43,3 +43,4 @@
 
 # Libraries
 /lib
+/Debug
