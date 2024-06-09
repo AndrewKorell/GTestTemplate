@@ -41,12 +41,12 @@ jobs:
         run: cmake --build .
         working-directory: test/build
       - name: configure windows
-        run: cmake . -B build
+        run: cmake .. -B build
         if: matrix.os == 'windows-latest'
-        working-directory: test
+        working-directory: test/build
       - name: build windows
         if: matrix.os == 'windows-latest'
-        run: cmake --build . --config Release
+        run: cmake --build .. --config Release
         working-directory: test/build
       - name: run test not windows
         if: matrix.os != 'windows-latest'
