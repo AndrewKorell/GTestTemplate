@@ -27,26 +27,42 @@ jobs:
           CXX_path: /usr/local/bin/g++-10
       - name: configure test ubuntu
         if: matrix.os == 'ubuntu-latest'
-        run: cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Werror" .. -B build
+        run: 
+          mkdir build
+          cd build
+          cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Werror" .. -B build
         working-directory: test/build
       - name: configure test macOs
         if: matrix.os == 'macOs-latest'
-        run: cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Werror" .. -B build
+        run: 
+          mkdir build
+          cd build
+          cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Werror" .. -B build
         working-directory: test/build
         env:
           CC: /usr/local/bin/gcc-10
           CXX: /usr/local/bin/g++-10
       - name: build test not windows
         if: matrix.os != 'windows-latest'
-        run: cmake --build .
+        
+        run: 
+          mkdir build
+          cd build
+          cmake --build ..
         working-directory: test/build
       - name: configure windows
-        run: cmake .. -B build
+        run: 
+          mkdir build
+          cd build
+          cmake .. -B build
         if: matrix.os == 'windows-latest'
         working-directory: test/build
       - name: build windows
         if: matrix.os == 'windows-latest'
-        run: cmake --build .. --config Release
+        run: 
+          mkdir build
+          cd build
+          cmake --build .. --config Release
         working-directory: test/build
       - name: run test not windows
         if: matrix.os != 'windows-latest'
