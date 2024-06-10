@@ -17,10 +17,10 @@ jobs:
         uses: ./ #install container
       - name: build step 1
         run: cmake -S . -B build 
-        working-directory: test
+        working-directory: .
       - name: build step 2
         run: cmake --build build
-        working-directory: test
+        working-directory: .
       - name: run ctest
         run: ctest
-        working-directory: test/build
+        working-directory: build/test
