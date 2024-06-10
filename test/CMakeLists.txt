@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 3.14)
-project(GTestTemplate)
+project(tests)
 
-set(CMAKE_CXX_STANDARD 14)
+
+set(CMAK
+E_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED_ON)
 
 include(FetchContent)
@@ -21,9 +23,21 @@ enable_testing()
 
 add_executable(
 	hello_test 
-	hello_test.cc
+	hello_test.cpp
 )
 
+add_executable(
+	test_main
+	test_main.cpp
+)
+
+
+target_link_libraries(
+	test_main PUBLIC
+	testables
+	GTest::gtest_main
+	GTest::gtest
+)
 
 
 target_link_libraries(
@@ -33,5 +47,6 @@ target_link_libraries(
 
 include(GoogleTest)
 gtest_discover_tests(hello_test)
+gtest_discover_tests(test_main)
 
 
