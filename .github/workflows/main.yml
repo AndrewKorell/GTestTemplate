@@ -32,9 +32,10 @@ jobs:
         run: ls
         working-directory: test
       - name: configure test ubuntu
-        if: matrix.os == 'ubuntu-latest'
+        #if: matrix.os == 'ubuntu-latest'
         run: 
-          cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Werror" . -B build
+          #cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Werror" . -B build
+          cmake -S . -B build
         working-directory: test
  #     - name: configure test macOs
  #       if: matrix.os == 'macOs-latest'
@@ -43,10 +44,10 @@ jobs:
  #       env:
  #         CC: /usr/local/bin/gcc-10
  #         CXX: /usr/local/bin/g++-10
-      - name: build test not windows
-        if: matrix.os != 'windows-latest'
+      - name: build test
+        #if: matrix.os != 'windows-latest'
         run: cmake .. -B build
-        working-directory: test/build
+        working-directory: test
  #     - name: configure windows
  #       run: cmake .. -B build
  #       if: matrix.os == 'windows-latest'
@@ -57,8 +58,8 @@ jobs:
  #       working-directory: test/build
       - name: run test not windows
         if: matrix.os != 'windows-latest'
-        run: ./MyFirstTest.cpp
-        working-directory: test
+        run: ./ctest
+        working-directory: test/build
       #- name: run test windows
       #  if: matrix.os == 'windows-latest'
       #  run: test.exe
