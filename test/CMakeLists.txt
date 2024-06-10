@@ -1,31 +1,37 @@
-cmake_minimum_required(VERSION 3.12)
-project(test CXX)
+cmake_minimum_required(VERSION 3.14)
+project(GTestTemplate)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED_ON)
+
+include(FetchContent)
+FetchContent_Declare(
+	googletest
+	URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+)
+
+
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
 
 message(STATUS "CC set to: $ENV{CC}")
 message(STATUS "CXX set to:$ENV{CXX}")
 
-if (WIN32)
-    option(GTEST_INCLUDE "")
-    option(GTEST_LINK "")
+enable_testing()
 
-    link_directories("D:/gtest/lib")
-    include_directories("D:/gtest/include")
+add_executable(
+	hello_test 
+	hello_test.cc
+)
 
-    set(CMAKE_CXX_FLAGS_RELEASE "/MT")
-    set(CMAKE_CXX_FLAGS_DEBUG "/MTd")
-endif ()
 
-if (APPLE)
-    link_directories("/usr/local/lib")
-    include_directories("/usr/local/include")
-endif ()
 
-add_executable(test MyFirstTest.cpp)
+target_link_libraries(
+	hello_test
+	GTest::gtest_main
+)
 
-if (WIN32)
-    target_link_libraries(${PROJECT_NAME} PRIVATE gtest_main gtest)
-else ()
-    target_link_libraries(${PROJECT_NAME} PRIVATE gtest pthread)
-endif ()
+include(GoogleTest)
+gtest_discover_tests(hello_test)
+
+
