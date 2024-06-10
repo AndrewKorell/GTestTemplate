@@ -2,10 +2,28 @@
 
 This is a working demonstration of a Unit Test wihtin an STM32 project. There will be further instructions for integrating into a CubeIDE project with microprocessor code. 
 
+
+## run from IDE # 
+
 To run tests select: **Run**->**Run Configuration**-->**C/C++ Testing (Tab)** then set **Runner** to **Google Test Runner** then press **Run** button.
 
 
-To run in command prompt:
+![image](https://github.com/AndrewKorell/GTestTemplate/assets/15695837/5702e9cd-1aab-47ab-a004-e60f9b793442)
+
+
+## add button to main screen ##
+
+**Run**->**Run Configuration**-->**Common (tab)** check the box beside Run 
+
+![image](https://github.com/AndrewKorell/GTestTemplate/assets/15695837/ea2e4ac9-30b4-43af-a4ac-1f357cdba942)
+
+![image](https://github.com/AndrewKorell/GTestTemplate/assets/15695837/4b701abe-d2df-41fc-a830-424d83fb114b)
+
+
+
+
+
+## To run in command prompt ##
 
 navigate to main folder:
 
