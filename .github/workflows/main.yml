@@ -58,7 +58,7 @@ jobs:
  #       working-directory: test/build
       - name: run test not windows
  #       if: matrix.os != 'windows-latest'
-        run: ./ctest
+        run: ctest
         working-directory: test/build
       #- name: run test windows
       #  if: matrix.os == 'windows-latest'
