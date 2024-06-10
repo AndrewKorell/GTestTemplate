@@ -1,4 +1,4 @@
-"# GTestTemplate" 
+# GTestTemplate # 
 
 This is a working demonstration of a Unit Test wihtin an STM32 project. There will be further instructions for integrating into a CubeIDE project with microprocessor code. 
 
