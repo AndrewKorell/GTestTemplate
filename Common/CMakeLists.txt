@@ -1,2 +1,2 @@
 project(comomon) 
-add_library(testables testables.c testables.h)
+add_library(basic_c basic_c.c basic_c.h)
