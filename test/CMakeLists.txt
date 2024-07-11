@@ -26,6 +26,12 @@ add_executable(
 	hello_test.cpp
 )
 
+add_executable(       #declaure an excutable test_basic_c using test_basic_c.cpp for source
+    test_basic_c      
+
+    test_basic_c.cpp
+)
+
 add_executable(
 	test_main
 	test_main.cpp
@@ -34,11 +40,15 @@ add_executable(
 
 target_link_libraries(
 	test_main PUBLIC
-	testables
-	GTest::gtest_main
+    GTest::gtest_main
 	GTest::gtest
 )
 
+target_link_libraries(  # connect basic_c and GTest::gtest_main to test_basic_C
+	test_basic_c
+    basic_c
+	GTest::gtest_main
+)
 
 target_link_libraries(
 	hello_test
@@ -46,7 +56,8 @@ target_link_libraries(
 )
 
 include(GoogleTest)
-gtest_discover_tests(hello_test)
+gtest_discover_tests(hello_test)  #test to include, don't have to include everything 
+gtest_discover_tests(test_basic_c)
 gtest_discover_tests(test_main)
 
 

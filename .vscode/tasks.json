@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "type": "shell",
+            "label": "CMake: build test",
+            "command": "cmake --build build ",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "CMake template build task"
+        },
+        {
+            "type": "shell",
+            "label": "CMake: configure",
+            "command": "cmake -S . -B build",
+            "problemMatcher": [],
+            "detail": "CMake template configure task"
+        }
+    ]
+}
