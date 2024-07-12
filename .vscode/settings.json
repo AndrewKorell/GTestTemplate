@@ -1,4 +1,7 @@
 {
     "makefile.makePath": "cmake",
-    "makefile.makefilePath": "CMakeLists.txt"
+    "makefile.makefilePath": "CMakeLists.txt",
+    "files.associations": {
+        "xlocale": "cpp"
+    }
 }
