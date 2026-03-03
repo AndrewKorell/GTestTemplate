@@ -1,0 +1,152 @@
+^C:\GIT\GTESTTEMPLATE\BUILD-TESTS\_DEPS\GOOGLETEST-SUBBUILD\CMAKEFILES\2CE922422FAF344736F56F677E3F744F\GOOGLETEST-POPULATE-MKDIR.RULE
+setlocal
+C:\devtools\mingw64\bin\cmake.exe -Dcfgdir=/Debug -P C:/git/GTestTemplate/build-tests/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -E touch C:/git/GTestTemplate/build-tests/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GIT\GTESTTEMPLATE\BUILD-TESTS\_DEPS\GOOGLETEST-SUBBUILD\CMAKEFILES\2CE922422FAF344736F56F677E3F744F\GOOGLETEST-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\git\GTestTemplate\build-tests\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -P C:/git/GTestTemplate/build-tests/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/download-googletest-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -P C:/git/GTestTemplate/build-tests/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/verify-googletest-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -P C:/git/GTestTemplate/build-tests/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/extract-googletest-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -E touch C:/git/GTestTemplate/build-tests/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GIT\GTESTTEMPLATE\BUILD-TESTS\_DEPS\GOOGLETEST-SUBBUILD\CMAKEFILES\2CE922422FAF344736F56F677E3F744F\GOOGLETEST-POPULATE-UPDATE.RULE
+setlocal
+C:\devtools\mingw64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -E touch C:/git/GTestTemplate/build-tests/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GIT\GTESTTEMPLATE\BUILD-TESTS\_DEPS\GOOGLETEST-SUBBUILD\CMAKEFILES\2CE922422FAF344736F56F677E3F744F\GOOGLETEST-POPULATE-PATCH.RULE
+setlocal
+C:\devtools\mingw64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -E touch C:/git/GTestTemplate/build-tests/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GIT\GTESTTEMPLATE\BUILD-TESTS\_DEPS\GOOGLETEST-SUBBUILD\CMAKEFILES\2CE922422FAF344736F56F677E3F744F\GOOGLETEST-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\git\GTestTemplate\build-tests\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -E touch C:/git/GTestTemplate/build-tests/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GIT\GTESTTEMPLATE\BUILD-TESTS\_DEPS\GOOGLETEST-SUBBUILD\CMAKEFILES\2CE922422FAF344736F56F677E3F744F\GOOGLETEST-POPULATE-BUILD.RULE
+setlocal
+cd C:\git\GTestTemplate\build-tests\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -E touch C:/git/GTestTemplate/build-tests/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GIT\GTESTTEMPLATE\BUILD-TESTS\_DEPS\GOOGLETEST-SUBBUILD\CMAKEFILES\2CE922422FAF344736F56F677E3F744F\GOOGLETEST-POPULATE-INSTALL.RULE
+setlocal
+cd C:\git\GTestTemplate\build-tests\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -E touch C:/git/GTestTemplate/build-tests/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GIT\GTESTTEMPLATE\BUILD-TESTS\_DEPS\GOOGLETEST-SUBBUILD\CMAKEFILES\2CE922422FAF344736F56F677E3F744F\GOOGLETEST-POPULATE-TEST.RULE
+setlocal
+cd C:\git\GTestTemplate\build-tests\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -E touch C:/git/GTestTemplate/build-tests/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GIT\GTESTTEMPLATE\BUILD-TESTS\_DEPS\GOOGLETEST-SUBBUILD\CMAKEFILES\6B5FF7A0ACDB10CADE5F0AD36DBEDCC8\GOOGLETEST-POPULATE-COMPLETE.RULE
+setlocal
+C:\devtools\mingw64\bin\cmake.exe -E make_directory C:/git/GTestTemplate/build-tests/_deps/googletest-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -E touch C:/git/GTestTemplate/build-tests/_deps/googletest-subbuild/CMakeFiles/Debug/googletest-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\devtools\mingw64\bin\cmake.exe -E touch C:/git/GTestTemplate/build-tests/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/Debug/googletest-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GIT\GTESTTEMPLATE\BUILD-TESTS\_DEPS\GOOGLETEST-SUBBUILD\CMAKEFILES\E6B5ABA9A67703A4F642FC4A0F76A932\GOOGLETEST-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GIT\GTESTTEMPLATE\BUILD-TESTS\_DEPS\GOOGLETEST-SUBBUILD\CMAKELISTS.TXT
+setlocal
+C:\devtools\mingw64\bin\cmake.exe -SC:/git/GTestTemplate/build-tests/_deps/googletest-subbuild -BC:/git/GTestTemplate/build-tests/_deps/googletest-subbuild --check-stamp-file C:/git/GTestTemplate/build-tests/_deps/googletest-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,5 @@
+if(EXISTS "C:/git/GTestTemplate/build-tests/test/test_search_array_rec[1]_tests.cmake")
+  include("C:/git/GTestTemplate/build-tests/test/test_search_array_rec[1]_tests.cmake")
+else()
+  add_test(test_search_array_rec_NOT_BUILT test_search_array_rec_NOT_BUILT)
+endif()

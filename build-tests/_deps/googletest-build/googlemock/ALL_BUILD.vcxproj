@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B07EFC9B-4CA4-3E52-860D-F4D4E06AD914}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock\include;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googletest\include;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock\include;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googletest\include;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock\include;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googletest\include;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock\include;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googletest\include;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/git/GTestTemplate/build-tests/_deps/googletest-src/googlemock/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\devtools\mingw64\bin\cmake.exe -SC:/git/GTestTemplate -BC:/git/GTestTemplate/build-tests --check-stamp-file C:/git/GTestTemplate/build-tests/_deps/googletest-build/googlemock/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\devtools\mingw64\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\CheckLibraryExists.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\FindThreads.cmake;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock\cmake\gmock.pc.in;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock\cmake\gmock_main.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\git\GTestTemplate\build-tests\_deps\googletest-build\googlemock\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/git/GTestTemplate/build-tests/_deps/googletest-src/googlemock/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\devtools\mingw64\bin\cmake.exe -SC:/git/GTestTemplate -BC:/git/GTestTemplate/build-tests --check-stamp-file C:/git/GTestTemplate/build-tests/_deps/googletest-build/googlemock/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\devtools\mingw64\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\CheckLibraryExists.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\FindThreads.cmake;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock\cmake\gmock.pc.in;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock\cmake\gmock_main.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\git\GTestTemplate\build-tests\_deps\googletest-build\googlemock\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/git/GTestTemplate/build-tests/_deps/googletest-src/googlemock/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\devtools\mingw64\bin\cmake.exe -SC:/git/GTestTemplate -BC:/git/GTestTemplate/build-tests --check-stamp-file C:/git/GTestTemplate/build-tests/_deps/googletest-build/googlemock/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\devtools\mingw64\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\CheckLibraryExists.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\FindThreads.cmake;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock\cmake\gmock.pc.in;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock\cmake\gmock_main.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\git\GTestTemplate\build-tests\_deps\googletest-build\googlemock\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/git/GTestTemplate/build-tests/_deps/googletest-src/googlemock/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\devtools\mingw64\bin\cmake.exe -SC:/git/GTestTemplate -BC:/git/GTestTemplate/build-tests --check-stamp-file C:/git/GTestTemplate/build-tests/_deps/googletest-build/googlemock/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\devtools\mingw64\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\CheckLibraryExists.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\devtools\mingw64\share\cmake-3.26\Modules\FindThreads.cmake;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock\cmake\gmock.pc.in;C:\git\GTestTemplate\build-tests\_deps\googletest-src\googlemock\cmake\gmock_main.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\git\GTestTemplate\build-tests\_deps\googletest-build\googlemock\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\git\GTestTemplate\build-tests\ZERO_CHECK.vcxproj">
+      <Project>{88333243-3249-3199-9165-621AF258424D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\git\GTestTemplate\build-tests\_deps\googletest-build\googlemock\gmock.vcxproj">
+      <Project>{1BCE05D7-EAA9-37FF-8CCD-84F3A6DCFC33}</Project>
+      <Name>gmock</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\git\GTestTemplate\build-tests\_deps\googletest-build\googlemock\gmock_main.vcxproj">
+      <Project>{6EDFE0F1-9B41-30C3-9FD8-5C34A582A0D7}</Project>
+      <Name>gmock_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\git\GTestTemplate\build-tests\_deps\googletest-build\googletest\gtest.vcxproj">
+      <Project>{7C69F0D3-A90E-3140-9E6B-25B04221B136}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\git\GTestTemplate\build-tests\_deps\googletest-build\googletest\gtest_main.vcxproj">
+      <Project>{7271695B-0292-33DC-B78A-368FBE3BDF98}</Project>
+      <Name>gtest_main</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

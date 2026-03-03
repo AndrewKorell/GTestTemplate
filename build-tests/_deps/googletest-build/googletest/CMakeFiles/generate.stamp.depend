@@ -1,0 +1,18 @@
+# CMake generation dependency list for this directory.
+C:/devtools/mingw64/share/cmake-3.26/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/devtools/mingw64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake
+C:/devtools/mingw64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake
+C:/devtools/mingw64/share/cmake-3.26/Modules/CheckIncludeFile.cmake
+C:/devtools/mingw64/share/cmake-3.26/Modules/CheckLibraryExists.cmake
+C:/devtools/mingw64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake
+C:/devtools/mingw64/share/cmake-3.26/Modules/FindPackageMessage.cmake
+C:/devtools/mingw64/share/cmake-3.26/Modules/FindPython.cmake
+C:/devtools/mingw64/share/cmake-3.26/Modules/FindPython/Support.cmake
+C:/devtools/mingw64/share/cmake-3.26/Modules/FindThreads.cmake
+C:/devtools/mingw64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake
+C:/devtools/mingw64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake
+C:/git/GTestTemplate/build-tests/_deps/googletest-src/googletest/CMakeLists.txt
+C:/git/GTestTemplate/build-tests/_deps/googletest-src/googletest/cmake/Config.cmake.in
+C:/git/GTestTemplate/build-tests/_deps/googletest-src/googletest/cmake/gtest.pc.in
+C:/git/GTestTemplate/build-tests/_deps/googletest-src/googletest/cmake/gtest_main.pc.in
+C:/git/GTestTemplate/build-tests/_deps/googletest-src/googletest/cmake/internal_utils.cmake

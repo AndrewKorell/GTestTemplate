@@ -2,9 +2,12 @@ cmake_minimum_required(VERSION 3.14)
 project(tests)
 
 
-set(CMAK
-E_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED_ON)
+
+
+#add_compile_options(-fsanitize=leak,address,undefined -fno-omit-frame-pointer -fno-common -O1)
+#link_libraries(-fsanitize=leak,address,undefined)
 
 include(FetchContent)
 FetchContent_Declare(

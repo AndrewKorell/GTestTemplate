@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/devtools/mingw64/share/cmake-3.26/Modules/FetchContent.cmake
+C:/devtools/mingw64/share/cmake-3.26/Modules/FetchContent/CMakeLists.cmake.in
+C:/devtools/mingw64/share/cmake-3.26/Modules/GoogleTest.cmake
+C:/git/GTestTemplate/test/CMakeLists.txt

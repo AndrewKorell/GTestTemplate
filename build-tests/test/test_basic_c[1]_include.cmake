@@ -1,0 +1,5 @@
+if(EXISTS "C:/git/GTestTemplate/build-tests/test/test_basic_c[1]_tests.cmake")
+  include("C:/git/GTestTemplate/build-tests/test/test_basic_c[1]_tests.cmake")
+else()
+  add_test(test_basic_c_NOT_BUILT test_basic_c_NOT_BUILT)
+endif()
